@@ -14,7 +14,7 @@ public class BallController {
     public void refreshCoordinates(@PathVariable Integer pageX, @PathVariable Integer pageY) {
         b.pageX=pageX;
         b.pageY=pageY;
-        System.out.println(b.toString());
+        //System.out.println(b.toString());
     }
 
     @GetMapping("ball")

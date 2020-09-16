@@ -15,7 +15,7 @@ public class GreetingController {
 
     @GetMapping("/greeting")
     public Greeting greeting(@RequestParam(value = "name", defaultValue = "World") String name) {
-        logger.info("Emit to queue1");
+        //logger.info("Emit to queue1");
         return new Greeting(counter.incrementAndGet(), String.format(temp, name));
     }
 
