@@ -73,7 +73,7 @@ var myApp = angular.module('myApp', ['ngStomp', 'ngWebSocket'])
                 (e) => {console.log(response.statusText);}
             );
 
-        }, 1);
+        }, 100);
     };
 
     $scope.StartTimer();
